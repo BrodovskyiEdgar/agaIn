@@ -1,0 +1,356 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC&family=Archivo:ital,wght@1,900&family=Caveat&family=Oswald&family=Stick&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC&family=Archivo:ital,wght@1,900&family=Caveat&family=Oswald&family=Roboto&family=Stick&display=swap');
+
+*,*:before,*:after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.main__container {
+    display: grid;
+    grid-template-columns: repeat(12, auto);
+    grid-template-rows: auto auto 695px 100px;
+    column-gap: 10px;
+    
+    
+    background: url('../img/karsten-winegeart-pQVecS8pBNY-unsplash\ 1.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center ; 
+    background-attachment: fixed;
+}
+
+.main__header {
+    display: grid;
+    grid-column: 2/12;
+    grid-row: 1/2;
+    grid-template-columns: repeat(11, auto) 275px;
+    
+}
+
+/*______________Logo_______*/
+.main__logo {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    margin-top: 12px;  
+}
+
+.logoBoxer {
+    width: 106px;
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 16px;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    transition: all 0.9s ease;
+}
+.logoBoxer:hover {
+    transform: rotateY(360deg);
+}
+
+.petcolor {
+    color: #F6A51D;
+}
+ .pBoxer {
+    
+     margin-left: 5px;
+     margin-top: -5px;
+ }
+/*_______End Logo_____*/
+
+
+
+ /*________Button__________*/
+.main__button {
+    grid-column: 11/12;
+    grid-row: 1/2;
+    justify-self: end; 
+   
+}
+
+.btn {
+    margin-top: 13px;
+    background: rgb(3, 156, 161);
+    color: rgb(255, 255, 255);
+    width: 150px;
+    height: 50px;
+    border-radius: 45px;
+    cursor: pointer;
+    border: 2px solid rgb(2, 250, 64);
+    text-transform: uppercase;
+    
+    font-weight: bold;
+    box-shadow: 0px 0px 25px rgba(255, 255, 255, 0.1);
+    transition: all 0.9s ease;
+    font-size: 12px;
+    text-align: center;
+}
+
+.btn:hover {
+    
+    background: #A9E01D;
+    transform: translateY(-5px);
+    color: rgb(255, 255, 255);
+    box-shadow: 5px 0px 25px rgb(255, 255, 255);
+}
+
+/*__________End Button____*/
+
+
+
+/*______Contact Adress WorkTime___*/
+.main__contact {
+    grid-column: 12/13;
+    justify-self: end;
+    display: grid;
+}
+
+.telephone {
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 25px;
+    margin-left: auto;
+    margin-top: 18px;
+    color: rgb(255, 255, 255);     
+}
+
+
+.adress {
+    font-family: 'Roboto';
+    font-weight: 300;
+    font-size: 22px;
+    margin-left: auto;
+    margin-top: 15px;
+    color: rgb(255, 255, 255);
+}
+
+.workTime {
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 16px;
+    margin-left: auto;
+    margin-top: 7px;
+    color: rgb(255, 255, 255);
+}
+/*______End Contact Adress WorkTime___*/
+
+
+
+
+
+/*________Main Section Info1 Info2____*/
+.main__section {
+    grid-column: 2/12;
+    grid-row: 2/3;
+    display: grid;
+    
+}
+
+.main__info1 {
+    font-family: 'Roboto';
+    font-weight: 500;
+    font-size: 36px;
+    text-align: center;
+    margin-top: 30px;
+    margin-left: 0;
+    color: rgb(255, 255, 255);
+    
+}
+
+.main__info2 {
+    font-family: 'Roboto';
+    font-weight: 300;
+    font-size: 32px;
+    text-align: center;
+    margin-top: 15px;
+    color: rgb(255, 255, 255);
+}
+
+
+/*_________________Navigation left_________________*/
+.boxNav {
+    display: flex;
+    height: 100%;
+    align-items: flex-end;
+    
+}
+ ul {
+    margin: 0;
+    padding: 0;
+    
+ }
+
+li {
+    list-style-type: none;
+    margin-top: 30px;
+    
+   
+}
+
+.main__navigationLeft {
+    
+    grid-column: 2/3;
+    grid-row: 3/4;     
+}
+
+.main__navigationLeft2 {
+    grid-column: 3/4;
+    grid-row: 3/4;
+}
+.item2l {
+    padding-top: 3px;
+}
+
+.main__navigationLeft3 {
+    grid-column: 4/5;
+    grid-row: 3/4;
+}
+
+.item3lSalon {
+    margin-left: 20px;
+    cursor: pointer;
+    transition: all 0.9s ease;
+}
+.item3lSalon:hover {
+transform: rotate(360deg) translateX(35px);
+ }
+
+.main__navigationLeft4 {
+    grid-column: 5/6;
+    grid-row: 3/4;
+    align-items: center;
+}
+
+
+/*Navigation Right*/
+
+.boxNavR {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content:end;
+    align-items: flex-end;
+}
+
+.main__navigationRight {
+    grid-column: 8/9;
+    grid-row: 3/4;
+    align-items: center;
+}
+
+.main__navigationRight2 {
+    grid-column: 9/10;
+    grid-row: 3/4;
+}
+
+.item2rBrit {
+    margin-left: 20px;
+    cursor: pointer;
+    transition: all 0.9s ease;
+}
+
+.item2rBrit:hover {
+    transform: rotate(-360deg) translateX(-35px);
+}
+
+
+.item2r {
+    padding-top: 10px;
+}
+.main__navigationRight3 {
+    grid-column: 10/11;
+    grid-row: 3/4;
+    
+}
+
+.item3r {
+    padding-top: 21px;
+}
+
+
+.main__navigationRight4 {
+    grid-column: 11/12;
+    grid-row: 3/4;
+}
+
+.item4r {
+    padding-top: 9px;
+}
+
+.item4rAmity {
+    margin-left: 5px;
+    cursor: pointer;
+    transition: all 0.9s ease;
+}
+.item4rAmity:hover {
+    transform: rotate(-360deg) translateX(-35px);
+}
+
+.item4r8and1 {
+    margin-left: 15px;
+    cursor: pointer;
+    transition: all 0.9s ease;
+}
+.item4r8and1:hover {
+    transform: rotate(-360deg) translateX(-35px);
+}
+/*-----------Footer--------*/
+.footer {
+    grid-column: 2/12;
+    margin-top: 50px;
+}
+
+hr {
+    background-color: #A7FFB0;
+    height: 1px;
+    border: 0; 
+}
+
+/*----------End Footer-------*/
+
+
+/*------Move item all-----*/
+
+.item {
+    cursor: pointer;
+    transition: all 0.9s ease;  
+}
+
+.item:hover {
+    transform: rotate(360deg) translateX(35px);  
+}
+.item2l {
+    cursor: pointer;
+    transition: all 0.9s ease;
+}
+.item2l:hover {
+    transform: rotate(360deg) translateX(35px);
+}
+
+/*------Item right transform-----*/
+
+.item2r {
+    cursor: pointer;
+    transition: all 0.9s ease;
+}
+.item2r:hover {
+    transform: rotate(-360deg) translateX(-35px);
+}
+
+.item3r {
+    cursor: pointer;
+    transition: all 0.9s ease;
+}
+.item3r:hover {
+    transform: rotate(-360deg) translateX(-35px);
+}
+
+.item4r {
+    cursor: pointer;
+    transition: all 0.9s ease;
+}
+
+.item4r:hover {
+    transform: rotate(-360deg) translateX(-35px);
+}
