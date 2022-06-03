@@ -26,7 +26,7 @@ body {
     grid-template-columns: repeat(12, auto);
     grid-template-rows: auto auto 695px 100px;
     column-gap: 10px;
-    
+    height: 115.2614727854856vh;
     /*
     background: url('../img/karsten-winegeart-pQVecS8pBNY-unsplash\ 1.jpg');
     background-size: cover;
