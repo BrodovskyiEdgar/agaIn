@@ -1,58 +1,82 @@
 @import url('https://fonts.googleapis.com/css2?family=Amatic+SC&family=Archivo:ital,wght@1,900&family=Caveat&family=Oswald&family=Stick&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Amatic+SC&family=Archivo:ital,wght@1,900&family=Caveat&family=Oswald&family=Roboto&family=Stick&display=swap');
 
+/*
+@media only screen and (max-width: 500px){ 
+    .main__header {
+        grid-column: 5/13;
+        grid-template-rows: 1/2;
+    }
+}
+*/
+
+
 *,*:before,*:after {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
+
 body {
-    background: url('../img/karsten-winegeart-pQVecS8pBNY-unsplash\ 1.jpg') no-repeat center center fixed;
-        background-size: cover;
-        /*background-repeat: no-repeat;*/
-        /*background-position: center;*/
-        /*background-attachment: fixed;*/
-    
+   
+    background: url('../img2/karsten-winegeart-pQVecS8pBNY-unsplash\ 1.png') no-repeat center center fixed;
+    background-size: cover; 
 }
-
-    
-
-
-
-
-
+  
 .main__container {
-    display: grid;
-    grid-template-columns: repeat(12, auto);
-    grid-template-rows: auto auto 695px 100px;
-    column-gap: 10px;
-    
-    /*
-    background: url('../img/karsten-winegeart-pQVecS8pBNY-unsplash\ 1.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center ; 
-    background-attachment: fixed;
-    */
+   display: grid;
+   grid-template-columns: repeat(12, auto);
+   grid-template-rows: auto auto 650px 100px;
+   column-gap: 10px; 
+   margin: 0px auto;
+   padding: 0px 15px;
+   max-width: 1600px;
 }
+
+@media (max-width:1200px){
+    .main__container {
+        max-width: 970px;
+    }
+}
+@media (max-width:992px) {
+    .main__container {
+        max-width: 750px;
+    }
+}
+@media (max-width:767px) {
+    .main__container {
+        max-width: none;
+    }
+}
+/*
+@media (max-width:500px) {
+    .main__container {
+        grid-template-rows: 300px 900px;
+    }
+}
+*/
 
 .main__header {
-    display: grid;
+   
+    display: flex;
+    justify-content: space-between;
     grid-column: 2/12;
     grid-row: 1/2;
-    grid-template-columns: repeat(11, auto) 275px;
+   
     
 }
 
 /*______________Logo_______*/
 .main__logo {
+    
     grid-column: 1/2;
     grid-row: 1/2;
     margin-top: 12px;  
 }
 
 .logoBoxer {
-    width: 106px;
+    
+    max-width: 106px;
     font-family: 'Roboto';
     font-weight: 400;
     font-size: 16px;
@@ -80,11 +104,13 @@ body {
 .main__button {
     grid-column: 11/12;
     grid-row: 1/2;
-    justify-self: end; 
-   
+    margin-left: auto;
+    margin-right: 20px;
+    
 }
 
 .btn {
+    
     margin-top: 13px;
     background: rgb(3, 156, 161);
     color: rgb(255, 255, 255);
@@ -94,12 +120,12 @@ body {
     cursor: pointer;
     border: 2px solid rgb(2, 250, 64);
     text-transform: uppercase;
-    
     font-weight: bold;
     box-shadow: 0px 0px 25px rgba(255, 255, 255, 0.1);
     transition: all 0.9s ease;
     font-size: 12px;
     text-align: center;
+    
 }
 
 .btn:hover {
@@ -118,7 +144,8 @@ body {
 .main__contact {
     grid-column: 12/13;
     justify-self: end;
-    display: grid;
+    display: flex;
+    flex-direction: column;
 }
 
 .telephone {
@@ -156,9 +183,11 @@ body {
 
 /*________Main Section Info1 Info2____*/
 .main__section {
+    margin-top: 12px;
     grid-column: 2/12;
     grid-row: 2/3;
-    display: grid;
+    display: flex;
+    flex-direction: column;
     
 }
 
@@ -242,10 +271,11 @@ transform: rotate(360deg) translateX(35px);
 
 .boxNavR {
     display: flex;
-    height: 100%;
+    
     align-items: center;
     justify-content:end;
     align-items: flex-end;
+    
 }
 
 .main__navigationRight {
@@ -263,6 +293,7 @@ transform: rotate(360deg) translateX(35px);
     margin-left: 20px;
     cursor: pointer;
     transition: all 0.9s ease;
+   
 }
 
 .item2rBrit:hover {
@@ -290,11 +321,12 @@ transform: rotate(360deg) translateX(35px);
 }
 
 .item4r {
-    padding-top: 9px;
+    padding-top: 12px;
 }
 
 .item4rAmity {
-    margin-left: 5px;
+    
+    margin-left: 15px;
     cursor: pointer;
     transition: all 0.9s ease;
 }
